@@ -114,11 +114,11 @@ class Database
 
     protected function resSuccess($res)
     {
-        echo json_encode(['data' => $res, 'error' => 0], JSON_UNESCAPED_UNICODE);
+        echo json_encode(['response' => $res, 'error' => 0], JSON_UNESCAPED_UNICODE);
     }
 
     protected function resError($message = 'Bad request')
     {
-        echo json_encode(['data' => $message, 'error' => 1], JSON_UNESCAPED_UNICODE);
+        echo json_encode(['response' => $message, 'error' => 1], JSON_UNESCAPED_UNICODE);
     }
 }
