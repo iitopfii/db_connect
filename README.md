@@ -1,2 +1,2 @@
 # db_connect
-Connect database OOP
+Connect database
